@@ -1,0 +1,28 @@
+{
+  "name": "codeowner-slackify",
+  "version": "1.0.0",
+  "description": "Actions to notify codeowners author to Slack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/actions/javascript-action.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
+  "author": "Marcos Segovia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcossegovia/codeowner-slackify/issues"
+  },
+  "homepage": "https://github.com/marcossegovia/codeowner-slackify#readme",
+  "dependencies": {
+    "@actions/core": "^1.1.0",
+    "@actions/github": "^1.1.0"
+  }
+}

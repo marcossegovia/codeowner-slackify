@@ -1,0 +1,21 @@
+name: "pull-request-slack"
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  pr-slack:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: TimonVS/pr-labeler-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#  slack:
+#    steps:
+#      - uses: homoluctus/slatify@master
+#        with:
+#          type: ${{ job.status }}
+#          job_name: '*Lint Check*'
+#          mention: 'here'
+#          mention_if: 'failure'
+#          channel: '#random'
+#          url: ${{ secrets.SLACK_WEBHOOK }}

@@ -1,0 +1,12 @@
+name: 'Pull Request Notifier'
+description: ''
+author: 'Marcos Segovia'
+inputs:
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
+  configuration-path:
+    description: 'The path for the label configurations'
+    default: '.github/label-channel.yml'
+runs:
+  using: 'node12'
+  main: 'index.js'
